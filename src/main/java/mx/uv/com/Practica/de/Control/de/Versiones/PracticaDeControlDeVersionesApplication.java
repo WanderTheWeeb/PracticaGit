@@ -30,6 +30,11 @@ public class PracticaDeControlDeVersionesApplication implements CommandLineRunne
 				numero = sc.nextInt();
 				tabla(numero);
 				break;
+			case 2:
+				for (int i = 2; i <= 5; i++) {
+					tabla(i);
+				}
+				break;
 
 			default:
 				System.out.println("Opcion no valida");
