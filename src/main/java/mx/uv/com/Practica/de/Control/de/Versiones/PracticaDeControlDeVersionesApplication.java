@@ -35,7 +35,10 @@ public class PracticaDeControlDeVersionesApplication implements CommandLineRunne
 					tabla(i);
 				}
 				break;
-
+			case 3:
+				System.out.println("Adios");
+				System.exit(0);
+				break;
 			default:
 				System.out.println("Opcion no valida");
 				break;
