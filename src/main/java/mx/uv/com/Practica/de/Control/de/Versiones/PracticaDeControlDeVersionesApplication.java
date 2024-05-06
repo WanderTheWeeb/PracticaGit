@@ -20,6 +20,11 @@ public class PracticaDeControlDeVersionesApplication implements CommandLineRunne
 
 		Scanner sc = new Scanner(System.in);
 
+		System.out.println("Ingrese su nombre de usuario");
+		String nombre = sc.nextLine();
+
+		System.out.println("Selecciona una opcion");
+
 		System.out.println("1) Mostrar una tabla");
 		System.out.println("2) Mostrar tablas del 2 al 5");
 		System.out.println("3) Salir");
@@ -28,9 +33,11 @@ public class PracticaDeControlDeVersionesApplication implements CommandLineRunne
 			case 1:
 				System.out.println("Ingresa un numero para mostrar su tabla de multiplicar");
 				numero = sc.nextInt();
+				System.out.println("Hola " + nombre + " gracias por utilizar el programa");
 				tabla(numero);
 				break;
 			case 2:
+				System.out.println("Hola " + nombre + " gracias por utilizar el programa");
 				for (int i = 2; i <= 5; i++) {
 					tabla(i);
 				}
@@ -46,6 +53,7 @@ public class PracticaDeControlDeVersionesApplication implements CommandLineRunne
 	}
 
 	public void tabla (int numero) {
+		System.out.println("Tabla del " + numero);
 		for (int i = 1; i <= 10; i++) {
 			System.out.println(numero + " x " + i + " = " + numero * i);
 		}
